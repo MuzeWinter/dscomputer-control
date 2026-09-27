@@ -1,0 +1,48 @@
+{
+  "name": "dscomputer-control",
+  "version": "0.3.0",
+  "description": "Bridge the official computer-use engine (@oai/sky) into DeepSeek Harness as native tools: enumerate apps and windows, capture window screenshots that work when the window is occluded, read the accessibility tree, and perform real input (click, type, key combos, scroll, drag) in Windows GUI apps.",
+  "type": "module",
+  "main": "lib/main.js",
+  "exports": {
+    ".": "./lib/main.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "skill",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "computer-use",
+    "gui-automation",
+    "windows-automation",
+    "accessibility",
+    "uia",
+    "screen-capture",
+    "desktop-automation"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuzeWinter/dscomputer-control.git"
+  },
+  "homepage": "https://github.com/MuzeWinter/dscomputer-control#readme",
+  "bugs": {
+    "url": "https://github.com/MuzeWinter/dscomputer-control/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

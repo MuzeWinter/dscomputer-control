@@ -1,0 +1,13 @@
+# DScomputer-control — bundle patch: inserts the computer-use bridge row
+# row into a profile's layer stack. Config keys are read by lib/main.js:
+#   approval: 'auto' | 'allowlist' | 'deny'   (default auto)
+#   approvedApps: [substring, ...]            (only used by approval: allowlist)
+#   imageMode: 'auto' | 'text'                (default auto)
+#   releaseAfterAction: true | false          (default true —— 每次操作后关闭引擎，
+#                                              立即收起引擎的光标覆盖层并恢复真实鼠标)
+#   maxTextChars: 20000
+#   timeoutMs: 45000
+#   scrollStep: 3
+- insert:
+    - id: dscomputer-control
+      name: 'dscomputer-control'
